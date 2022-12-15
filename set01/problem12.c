@@ -69,3 +69,5 @@ void output(int n, Complex c[n], Complex result);
   printf("The sum is %f+%fi",
   result.real,result.imaginary);
 }
+return 0;
+1

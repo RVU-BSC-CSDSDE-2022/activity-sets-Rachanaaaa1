@@ -53,4 +53,4 @@ int main()
   sum=sum_n_array(n, a);
   output(n, a,sum);
   return 0;
-}
+} 

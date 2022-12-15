@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int input();
-int sum_n_nos(int n);
+int sum_n_no(int n);
 void output(int n, int sum);
 
 int input()
@@ -12,7 +12,7 @@ int input()
   return n;
 }
 
-int sum_n_nos(int n)
+int sum_n_no(int n)
 {
     int sum=0;
     for(int i=1; i<=n; i++)
@@ -32,6 +32,6 @@ int main()
 {
   int n, sum=0;
   n=input();
-  sum=sum_n_nos(n);
+  sum=sum_n_no(n);
   output(n, sum);
 }

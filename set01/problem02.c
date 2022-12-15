@@ -7,3 +7,4 @@ sum = a + b;
 printf("%d + %d = %d", a, b, sum);
 return 0;
   }
+output_void("Ent")

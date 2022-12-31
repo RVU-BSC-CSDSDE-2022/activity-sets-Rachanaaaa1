@@ -70,4 +70,3 @@ void output(int n, Complex c[n], Complex result);
   result.real,result.imaginary);
 }
 return 0;
-1

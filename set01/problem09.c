@@ -14,6 +14,6 @@ int main()
 
 double square_root(double num)
 {
-    return sqrt(num);
+    return 0;
 }
 

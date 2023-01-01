@@ -2,7 +2,7 @@
 int input();
 void add(int a, int b, int *sum);
 void output(int a, int b, int sum);
-int main()w
+int main()
 {
   input();
 }
@@ -10,7 +10,7 @@ int main()w
 int input() 
 {
   int a, b, sum;
-  printf("Enter two numbers");
+  printf("Enter two numbers:");
   scanf("%d%d", &a, &b);
   add(a, b, &sum);
 }
@@ -23,5 +23,5 @@ void add(int a, int b, int *sum)
 
 void output(int a, int b, int sum) 
 {
-  printf("The sum of %d and %d  is %d ", a, b, sum);
+  printf("The sum of %d and %d is %d ", a, b, sum);
 } 

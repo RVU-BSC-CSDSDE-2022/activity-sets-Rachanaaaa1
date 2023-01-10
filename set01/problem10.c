@@ -48,7 +48,7 @@ int stringcompare(char *string1, char *string2)
 void output(char *string1, char *sring2, int result)
 {
   printf("The output is %d",result);
-}
+} 
   
   
 

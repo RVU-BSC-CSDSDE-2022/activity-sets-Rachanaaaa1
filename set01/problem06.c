@@ -41,4 +41,4 @@ void compare(int a, int b, int c,int *largest)
 void output(int a, int b, int c, int largest)
 {
     printf("The largest number is %d\n", largest);
-}
+} 

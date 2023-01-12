@@ -1,37 +1,35 @@
 #include <stdio.h>
-
-int input();
-int sum_n_no(int n);
+int input_n();
+int sum_n_nos(int n);
 void output(int n, int sum);
-
-int input()
+int main()
 {
-  int n;
-  printf("Enter the number\n");
-  scanf("%d", &n);
-  return n;
+  int n, sum;
+  n = input_n();
+  sum=sum_n_nos(n);
+  output(n,sum);
+  return 0;
 }
 
-int sum_n_no(int n)
+int input_n()
 {
-    int sum=0;
-    for(int i=1; i<=n; i++)
-      {
-        sum=sum+i;
-      }
+  int num;
+  printf("Enter the number");
+  if(scanf("%d",&num));
+  return num;
+}
 
+int sum_n_nos(int n)
+{ 
+  int i ,sum=0;
+  for (i=1 ; i <= n; ++i)
+  {
+    sum += i;
+  }
   return sum;
 }
 
-void output(int n , int sum)
+void output(int n, int sum)
 {
-  printf("The sum of %d is %d\n",n, sum);
-}
-
-int main()
-{
-  int n, sum=0;
-  n=input();
-  sum=sum_n_no(n);
-  output(n, sum);
+  printf("Sum of all natural numbers untill n=%d is %d", n, sum);
 }

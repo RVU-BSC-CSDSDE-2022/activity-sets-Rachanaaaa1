@@ -5,6 +5,7 @@ void output(int a,int b,int sum);
 int main(){
   input();
 }
+
 int input()
 {
   int a,b,sum;

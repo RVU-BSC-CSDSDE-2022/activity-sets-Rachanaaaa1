@@ -13,7 +13,7 @@ void output(int n, Complex c[n], Complex result);
 
 int main()
 {
-  int n;
+  int n; 
   n=get_n();
   Complex c[n];
   input_n_complex(n,c);

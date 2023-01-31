@@ -71,4 +71,4 @@ void output(int n, Complex c[n], Complex result)
       printf("%d+%di ",(int)c[i].real,(int)c[i].imaginary);
     }
   printf("is %d+%di\n",(int)result.real,(int)result.imaginary);
-}
+}   

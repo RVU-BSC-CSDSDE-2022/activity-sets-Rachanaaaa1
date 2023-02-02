@@ -1,37 +1,40 @@
-#include<stdio.h>
-#include <stdlib.h>
-#include<math.h>
-double input();
-double square_root(double n);
-void output(double n, double sqrroot);
+#include <math.h>
+#include <stdio.h>
+float input();
+float square_root(float n);
+void output(float n, float sqrroot);
 
-int main(){
-  double n = input();
-  double sq = square_root(n);
-  output(n,sq);
+int main()
+{
+	float n,sqrroot;
+	n=input();
+	sqrroot=square_root(n);
+	output(n,sqrroot);
+	return 0;
 }
 
-double input(){
-  double a;
-  printf("Enter a number\n");
-  if(scanf("%lf", &a)!=1){
-    printf("Error in user input system can't continue\n");
-    exit(0);
-  }
-  return(a);
+float input()
+{
+	float n;
+	printf("Enter the number: ");
+	if(scanf("%f",&n));
+	return n;
 }
 
-double square_root(double n){
-  double x = n, y = 1.0;
-  double precision = 0.000001;
-  while((x-y)/x > precision){
-    x = (x+y)/2;
-    y = n/x;
-  }
-  return(x);
+float square_root(float n)
+{
+	float guess,next;
+	guess=n/2;
+	next=0.5*(guess+n/guess);
+	while(fabs(next-guess)>0.001)
+	{
+		guess=next;
+		next=0.5*(guess+n/guess);
+	}
+	return next;
 }
 
-void output(double n, double sqrroot){
-  printf("Square root of %.2lf is %.2lf\n",n,sqrroot);
-} 
-
+void output(float n, float sqrroot)
+{	
+	printf("Square root of %.2f is %.2f\n",n,sqrroot);
+}

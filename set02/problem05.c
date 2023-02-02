@@ -11,7 +11,7 @@ int main()
   gcd=find_gcd(a,b);
   output(a,b,gcd);
   return 0;
-}
+} 
 
 int input();
 {
@@ -35,4 +35,4 @@ int find_gcd(int a, int b)
 void output(int a, int b, int gcd)
 {
   printf("G.C.D of %d and %d is %d\n",a,b,gcd);
-}
+}  

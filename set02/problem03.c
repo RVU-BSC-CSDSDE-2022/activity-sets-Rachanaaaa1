@@ -25,7 +25,10 @@ int is_composite(int n)
   for (int i=2 ; i<n ; i++)
     {
       if(n%i == 0)
-      {
+      {   printf("Enetr the number");
+        scanf("%d",&num);
+        if(return is_composite);
+        else(return is_not_composite)
         return 1;
       }
     }
